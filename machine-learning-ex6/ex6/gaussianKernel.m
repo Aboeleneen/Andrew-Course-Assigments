@@ -15,11 +15,11 @@ sim = 0;
 %               sigma
 %
 %
-
-
-
-
-
+temp = x1.-x2;
+temp=temp.^2;
+temp=sum(temp);
+temp=temp / (2*sigma*sigma);
+sim = exp(-temp);
 
 % =============================================================
     
